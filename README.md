@@ -9,6 +9,8 @@ This is implementation of our debug view for iOS application.
 3. in your AppDelegate add this snippet:
 
 ``` 
+private var debugWindow: UIWindow?
+
 func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         debugWindow = DebugFactory.showDebugWindow()
